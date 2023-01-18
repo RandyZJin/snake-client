@@ -12,7 +12,13 @@ const connect = function () {
 
   conn.on("connect", () => {
     console.log("Successfully connected to game");
-    conn.write("Name: NYY")
+    conn.write("Name: NYY");
+    // setInterval(()=> {conn.write("Move: up");}, 150)
+    // setInterval(()=> {conn.write("Move: up");}, 100)
+    // setInterval(()=> {conn.write("Move: up");}, 150)
+    
+    
+    
   });
 
   conn.on("data", (data) => {
